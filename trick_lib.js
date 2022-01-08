@@ -1660,9 +1660,9 @@ add_trick({
         SalaryBonus(16)
     ],
     levels: {
-        1: { at: 25, perk: MagicBoost('green', 9) },
-        2: { at: 50, perk: MagicBoost('yellow', 9) },
-        3: { at: 100, perk: MagicBoost('blue', 9) }
+        1: { at: 25, perk: MagicBoost('green', 1) },
+        2: { at: 50, perk: MagicBoost('yellow', 1) },
+        3: { at: 100, perk: MagicBoost('blue', 1) }
     }
 });
 
