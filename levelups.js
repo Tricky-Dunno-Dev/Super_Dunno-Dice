@@ -20,27 +20,26 @@ LevelUp = Ice.$extend('LevelUp', {
 // Subtract 20 for level
 LevelUp(FreeGold(50));
 LevelUp(LearnTrick('Ace'));
-// LevelUp(FreeMultiplier(0.25));
-// LevelUp(FreePower());
-// LevelUp(LearnTrick('Plank'));
-// LevelUp(FreePower());
-// LevelUp(LearnTrick('Three in a Row'));
-// LevelUp(FreeGold(250));
-// LevelUp(FreePower());
-// LevelUp(LearnTrick('Three of a Kind'));
-// LevelUp(FreeDie());
-// LevelUp(FreePower());
-// LevelUp(FreeGold(500));
-// LevelUp(LearnTrick('Easy As'));
-// LevelUp(FreeDie());
-// LevelUp(FreeMultiplier(0.25));
-// LevelUp(LearnTrick('Patriot'));
-// LevelUp(FreeDie());
-// LevelUp(FreePower());
-// LevelUp(LearnTrick('Evil'));
+LevelUp(FreeMultiplier(0.25));
+LevelUp(FreePower());
+LevelUp(LearnTrick('Plank'));
+LevelUp(FreePower());
+LevelUp(LearnTrick('Three in a Row'));
+LevelUp(FreeGold(250));
+LevelUp(FreePower());
+LevelUp(LearnTrick('Three of a Kind'));
+LevelUp(FreeDie());
+LevelUp(FreePower());
+LevelUp(FreeGold(500));
+LevelUp(LearnTrick('Easy As'));
+LevelUp(FreeDie());
+LevelUp(FreeMultiplier(0.25));
+LevelUp(LearnTrick('Patriot'));
+LevelUp(FreeDie());
+LevelUp(FreePower());
+LevelUp(LearnTrick('Evil'));
 
 var levelup_tricks = [
-'nothing',
 'Lucky 7',
 'Information',
 'Hup!',
@@ -98,9 +97,6 @@ var levelup_tricks = [
 ];
 
 _.each(levelup_tricks, function(name) {
-	if(name==='nothing') {
-		LevelUp(FreeGold(0));
-	} else {
 		LevelUp(FreePower());
 		LevelUp(FreeGold(500));
 		LevelUp(FreeMultiplier(0.25));
@@ -109,5 +105,66 @@ _.each(levelup_tricks, function(name) {
 		LevelUp(FreeGold(500));
 		LevelUp(FreeMultiplier(0.25));
     		LevelUp(LearnTrick(name));
-	}
 });
+
+//Adding new shit
+
+var levelup_new_tricks = [
+'Biggun',
+'Fattonne',
+]
+
+_.each(levelup_new_tricks, function(name) {
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreeDie());
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreeDie());
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+		LevelUp(FreePower());
+		LevelUp(FreeGold(500));
+		LevelUp(FreeMultiplier(0.25));
+    		LevelUp(LearnTrick(name));
+});
+
