@@ -40,8 +40,8 @@ LevelUp(LearnTrick('Ace'));
 // LevelUp(LearnTrick('Evil'));
 
 var levelup_tricks = [
-'Lucky 7',
 'nothing',
+'Lucky 7',
 'Information',
 'Hup!',
 'Five and Dime',
