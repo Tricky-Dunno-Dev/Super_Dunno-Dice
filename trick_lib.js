@@ -1666,6 +1666,35 @@ add_trick({
     }
 });
 
+add_trick({
+    name: 'Biggun',
+    test: ComboSequence({
+        seq: [100]
+    }),
+    rewards: [
+        SalaryBonus(40)
+    ],
+    levels: {
+        1: { at: 100, perk: FreePower() },
+        2: { at: 1000, perk: FreePower() },
+        3: { at: 2000, perk: FreePower() }
+    }
+});
+
+add_trick({
+    name: 'Fattonne',
+    test: ComboSequence({
+        seq: [100,100,100,100,100,100,100,100,100,100]
+    }),
+    rewards: [
+        SalaryBonus(60)
+    ],
+    levels: {
+        1: { at: 100, perk: FreePower() },
+        2: { at: 1000, perk: FreePower() },
+        3: { at: 2000, perk: FreePower() }
+    }
+});
 
 
 
