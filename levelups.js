@@ -116,7 +116,7 @@ var levelup_new_tricks = [
 
 ]
 
-// _.each(levelup_new_tricks, function(name) {
+_.each(levelup_new_tricks, function(name) {
 // 		LevelUp(FreePower());
 // 		LevelUp(FreeGold(500));
 // 		LevelUp(FreeMultiplier(0.25));
@@ -167,6 +167,6 @@ var levelup_new_tricks = [
 // 		LevelUp(FreePower());
 // 		LevelUp(FreeGold(500));
 // 		LevelUp(FreeMultiplier(0.25));
-//     		LevelUp(LearnTrick(name));
-// });
+    		LevelUp(LearnTrick(name));
+});
 
