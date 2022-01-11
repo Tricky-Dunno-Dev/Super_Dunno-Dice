@@ -220,7 +220,7 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
         var flytime = 1000 / flyers.length;
         if(flytime > 400) flytime = 400;
         if(flytime < 50) flytime = 50;
-        //this.game.scene.banner.play_flyers(flyers, flytime, _.bind(this.resume, this));
+        this.game.scene.banner.play_flyers(flyers, 1, _.bind(this.resume, this));
 
         return false;
     },
