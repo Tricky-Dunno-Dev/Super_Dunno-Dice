@@ -112,59 +112,61 @@ _.each(levelup_tricks, function(name) {
 var levelup_new_tricks = [
 'Biggun',
 'Fattonne',
+'Mal0','Peanut','Teentacle','Actual Canibal','Reluctant','Mr Chompy','Cuddleslime','What happened?','Do not listen to them','Fuzzy and creative','You are a great feat','Excellent pianist','British','Silver bullets required','Level seven ','Dialup','Look at dado Etsy!','Longboi','Cry everytime','Something tub','Saint Nick?'
+
 ]
 
-_.each(levelup_new_tricks, function(name) {
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreeDie());
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreeDie());
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-		LevelUp(FreePower());
-		LevelUp(FreeGold(500));
-		LevelUp(FreeMultiplier(0.25));
-    		LevelUp(LearnTrick(name));
-});
+// _.each(levelup_new_tricks, function(name) {
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreeDie());
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreeDie());
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+// 		LevelUp(FreePower());
+// 		LevelUp(FreeGold(500));
+// 		LevelUp(FreeMultiplier(0.25));
+//     		LevelUp(LearnTrick(name));
+// });
 
