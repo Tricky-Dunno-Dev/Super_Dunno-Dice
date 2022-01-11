@@ -1697,5 +1697,26 @@ add_trick({
 });
 
 
+add_trick({name: 'Mal0', test: ComboSequence ({seq: [1,4,71]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(2000) }, 3: { at: 10000, perk: MagicBoost('green', 1) }}});
+add_trick({name: 'Peanut', test: ComboSequence ({seq: [1,73]}), rewards: [SalaryBonus(8)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(2000) }, 3: { at: 15000, perk: MagicBoost('pink', 1) }}});
+add_trick({name: 'Teentacle', test: ComboSequence ({seq: [2,6,62]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(3000) }, 3: { at: 10000, perk: MagicBoost('blue', 1) }}});
+add_trick({name: 'Actual Canibal', test: ComboSequence ({seq: [12,47]}), rewards: [SalaryBonus(6)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(3000) }, 3: { at: 15000, perk: MagicBoost('yellow', 1) }}});
+add_trick({name: 'Reluctant', test: ComboSequence ({seq: [50,7]}), rewards: [SalaryBonus(6)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(3000) }, 3: { at: 15000, perk: MagicBoost('red', 1) }}});
+add_trick({name: 'Mr Chompy', test: ComboSequence ({seq: [6,82]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(4000) }, 3: { at: 15000, perk: MagicBoost('purple', 1) }}});
+add_trick({name: 'Cuddleslime', test: ComboSequence ({seq: [99,9]}), rewards: [SalaryBonus(8)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(4000) }, 3: { at: 15000, perk: MagicBoost('green', 1) }}});
+add_trick({name: 'What happened?', test: ComboSequence ({seq: [1,7,30]}), rewards: [SalaryBonus(10)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(4000) }, 3: { at: 10000, perk: MagicBoost('pink', 1) }}});
+add_trick({name: 'Do not listen to them', test: ComboSequence ({seq: [93,9]}), rewards: [SalaryBonus(8)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(5000) }, 3: { at: 15000, perk: MagicBoost('blue', 1) }}});
+add_trick({name: 'Fuzzy and creative', test: ComboSequence ({seq: [10,48]}), rewards: [SalaryBonus(6)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(5000) }, 3: { at: 15000, perk: MagicBoost('yellow', 1) }}});
+add_trick({name: 'You are a great feat', test: ComboSequence ({seq: [4,26]}), rewards: [SalaryBonus(4)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(5000) }, 3: { at: 15000, perk: MagicBoost('red', 1) }}});
+add_trick({name: 'Excellent pianist', test: ComboSequence ({seq: [50,31]}), rewards: [SalaryBonus(6)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(6000) }, 3: { at: 15000, perk: MagicBoost('purple', 1) }}});
+add_trick({name: 'British', test: ComboSequence ({seq: [3,2,88]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(6000) }, 3: { at: 10000, perk: MagicBoost('green', 1) }}});
+add_trick({name: 'Silver bullets required', test: ComboSequence ({seq: [1,9,83]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(6000) }, 3: { at: 10000, perk: MagicBoost('pink', 1) }}});
+add_trick({name: 'Level seven ', test: ComboSequence ({seq: [3,7,90]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(7000) }, 3: { at: 10000, perk: MagicBoost('green', 1) }}});
+add_trick({name: 'Dialup', test: ComboSequence ({seq: [1,4,98]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(7000) }, 3: { at: 10000, perk: MagicBoost('pink', 1) }}});
+add_trick({name: 'Look at dado Etsy!', test: ComboSequence ({seq: [32,51]}), rewards: [SalaryBonus(6)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(7000) }, 3: { at: 15000, perk: MagicBoost('blue', 1) }}});
+add_trick({name: 'Longboi', test: ComboSequence ({seq: [119,3]}), rewards: [SalaryBonus(10)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(8000) }, 3: { at: 15000, perk: MagicBoost('yellow', 1) }}});
+add_trick({name: 'Cry everytime', test: ComboSequence ({seq: [1,7,62]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(2000) }, 3: { at: 10000, perk: MagicBoost('green', 1) }}});
+add_trick({name: 'Something tub', test: ComboSequence ({seq: [1,2,99]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(2000) }, 3: { at: 10000, perk: MagicBoost('pink', 1) }}});
+add_trick({name: 'Saint Nick?', test: ComboSequence ({seq: [4,6,66]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(3000) }, 3: { at: 10000, perk: MagicBoost('blue', 1) }}});
 
 
