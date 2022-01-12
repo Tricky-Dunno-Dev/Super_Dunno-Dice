@@ -110,10 +110,7 @@ _.each(levelup_tricks, function(name) {
 //Adding new shit
 
 var levelup_new_tricks = [
-'Biggun',
-'Fattonne',
-'Mal0','Peanut','Teentacle','Actual Canibal','Reluctant','Mr Chompy','Cuddleslime','What happened?','Do not listen to them','Fuzzy and creative','You are a great feat','Excellent pianist','British','Silver bullets required','Level seven ','Dialup','Look at dado Etsy!','Longboi','Cry everytime','Something tub','Saint Nick?'
-
+'Biggun','Biggerun','Biggestun','???un','Just take the money','Big Dubs','Gigatonne','Teratonne','Exatonne','e','e boring','nice','Bonhonogaloogs!','Mal0','Peanut','Teentacle','Actual Canibal','Reluctant','Mr Chompy','Cuddleslime','What happened?','Do not listen to them','Fuzzy and creative','You are a great feat','Excellent pianist','British','Silver bullets required','Level seven ','Dialup','Look at dado Etsy!','Longboi','Cry everytime','Something tub','Saint Nick?','DO NOT stop ;)','Keep going!','Rollin down the Eyre','Dubai 85','Direct ascent to mars','Interstellar shot','Bye :)'
 ]
 
 _.each(levelup_new_tricks, function(name) {
