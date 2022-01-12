@@ -1666,6 +1666,8 @@ add_trick({
     }
 });
 
+//     NEW TRICKS
+
 add_trick({
     name: 'Biggun',
     test: ComboSequence({
@@ -1681,21 +1683,7 @@ add_trick({
     }
 });
 
-add_trick({
-    name: 'Fattonne',
-    test: ComboSequence({
-        seq: [100,100,100,100,100,100,100,100,100,100]
-    }),
-    rewards: [
-        SalaryBonus(60)
-    ],
-    levels: {
-        1: { at: 100, perk: FreePower() },
-        2: { at: 1000, perk: FreePower() },
-        3: { at: 2000, perk: FreePower() }
-    }
-});
-
+//SCP themed tricks
 
 add_trick({name: 'Mal0', test: ComboSequence ({seq: [1,4,71]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(2000) }, 3: { at: 10000, perk: MagicBoost('green', 1) }}});
 add_trick({name: 'Peanut', test: ComboSequence ({seq: [1,73]}), rewards: [SalaryBonus(8)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(2000) }, 3: { at: 15000, perk: MagicBoost('pink', 1) }}});
@@ -1718,5 +1706,40 @@ add_trick({name: 'Longboi', test: ComboSequence ({seq: [119,3]}), rewards: [Sala
 add_trick({name: 'Cry everytime', test: ComboSequence ({seq: [1,7,62]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(2000) }, 3: { at: 10000, perk: MagicBoost('green', 1) }}});
 add_trick({name: 'Something tub', test: ComboSequence ({seq: [1,2,99]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(2000) }, 3: { at: 10000, perk: MagicBoost('pink', 1) }}});
 add_trick({name: 'Saint Nick?', test: ComboSequence ({seq: [4,6,66]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(3000) }, 3: { at: 10000, perk: MagicBoost('blue', 1) }}});
+
+//Big Number Tricks
+
+add_trick({name: 'Biggun', test: ComboSequence ({seq: [100]}), rewards: [SalaryBonus(30)], levels: {1: { at: 300, perk: FreeMultiplier(25) }, 2: { at: 700, perk: FreeGold(1000) }, 3: { at: 1500, perk: FreeDie() }}});
+add_trick({name: 'Biggerun', test: ComboSequence ({seq: [125]}), rewards: [SalaryBonus(80)], levels: {1: { at: 300, perk: FreeMultiplier(100) }, 2: { at: 700, perk: FreeGold(1000) }, 3: { at: 1000, perk: FreeDie() }}});
+add_trick({name: 'Biggestun', test: ComboSequence ({seq: [150]}), rewards: [SalaryBonus(100)], levels: {1: { at: 200, perk: FreeMultiplier(200) }, 2: { at: 500, perk: FreeDie() }, 3: { at: 1000, perk: FreeDie() }}});
+add_trick({name: '???un', test: ComboSequence ({seq: [200]}), rewards: [SalaryBonus(150)], levels: {1: { at: 200, perk: FreeMultiplier(500) }, 2: { at: 500, perk: FreeDie() }, 3: { at: 1000, perk: FreeDie() }}});
+add_trick({name: 'Just take the money', test: ComboSequence ({seq: [500]}), rewards: [SalaryBonus(1000)], levels: {1: { at: 200, perk: FreeMultiplier(1000) }, 2: { at: 500, perk: FreeDie() }, 3: { at: 1000, perk: FreeDie() }}});
+add_trick({name: 'Big Dubs', test: ComboSequence ({seq: [100,100]}), rewards: [SalaryBonus(30)], levels: {1: { at: 200, perk: FreeMultiplier(100) }, 2: { at: 500, perk: FreeDie() }, 3: { at: 1000, perk: FreeDie() }}});
+add_trick({name: 'Gigatonne', test: ComboSequence ({seq: [100,100,100,100,100]}), rewards: [SalaryBonus(64)], levels: {1: { at: 25, perk: FreeMultiplier(200) }, 2: { at: 100, perk: FreeDie() }, 3: { at: 200, perk: FreeDie() }}});
+add_trick({name: 'Teratonne', test: ComboSequence ({seq: [100,100,100,100,100,100,100,100]}), rewards: [SalaryBonus(128)], levels: {1: { at: 5, perk: FreeMultiplier(500) }, 2: { at: 10, perk: FreeDie() }, 3: { at: 20, perk: FreeDie() }}});
+add_trick({name: 'Exatonne', test: ComboSequence ({seq: [100,100,100,100,100,100,100,100,100,100]}), rewards: [SalaryBonus(192)], levels: {1: { at: 5, perk: FreeMultiplier(1000) }, 2: { at: 10, perk: FreeDie() }, 3: { at: 20, perk: FreeDie() }}});
+
+//Misc new tricks
+
+add_trick({name: 'e', test: ComboSequence ({seq: [62,1]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(1000) }, 3: { at: 15000, perk: FreeMultiplier(15) }}});
+add_trick({name: 'e boring', test: ComboSequence ({seq: [92,6]}), rewards: [SalaryBonus(25)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 5000, perk: FreeGold(1000) }, 3: { at: 15000, perk: FreeMultiplier(15) }}});
+add_trick({name: 'nice', test: ComboSequence ({seq: [6,94,20]}), rewards: [SalaryBonus(16)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2500, perk: FreeGold(1000) }, 3: { at: 10000, perk: FreeMultiplier(15) }}});
+add_trick({name: 'Bonhonogaloogs!', test: ComboSequence ({seq: [80,8,1,35]}), rewards: [SalaryBonus(32)], levels: {1: { at: 1000, perk: FreeMultiplier(10) }, 2: { at: 2000, perk: FreeGold(1000) }, 3: { at: 8000, perk: FreeMultiplier(15) }}});
+
+//Longer Straights
+
+add_trick({name: 'DO NOT stop ;)', test: ComboStraight({in_a_row: 8 }), rewards: [SalaryBonus(8)], levels: {1: { at: 200, perk: FreeMultiplier(2.5) }, 2: { at: 500, perk: FreePower() }, 3: { at: 1000, perk: FreeGold(1000) }}});
+add_trick({name: 'Keep going!', test: ComboStraight({in_a_row: 10 }), rewards: [SalaryBonus(20)], levels: {1: { at: 100, perk: FreeMultiplier(5) }, 2: { at: 250, perk: FreePower() }, 3: { at: 750, perk: FreeGold(1000) }}});
+add_trick({name: 'Rollin down the Eyre', test: ComboStraight({in_a_row: 12 }), rewards: [SalaryBonus(32)], levels: {1: { at: 25, perk: FreeMultiplier(5) }, 2: { at: 100, perk: FreePower() }, 3: { at: 250, perk: FreeDie() }}});
+add_trick({name: 'Dubai 85', test: ComboStraight({in_a_row: 15 }), rewards: [SalaryBonus(64)], levels: {1: { at: 10, perk: FreeMultiplier(7.5) }, 2: { at: 20, perk: FreePower() }, 3: { at: 30, perk: FreeDie() }}});
+add_trick({name: 'Direct ascent to mars', test: ComboStraight({in_a_row: 18 }), rewards: [SalaryBonus(80)], levels: {1: { at: 10, perk: FreeMultiplier(7.5) }, 2: { at: 20, perk: FreeGold(10000) }, 3: { at: 30, perk: FreeDie() }}});
+add_trick({name: 'Interstellar shot', test: ComboStraight({in_a_row: 22 }), rewards: [SalaryBonus(120)], levels: {1: { at: 5, perk: FreeMultiplier(10) }, 2: { at: 10, perk: FreeDie() }, 3: { at: 20, perk: FreeDie() }}});
+add_trick({name: 'Bye :)', test: ComboStraight({in_a_row: 28 }), rewards: [SalaryBonus(200)], levels: {1: { at: 5, perk: FreeMultiplier(10) }, 2: { at: 10, perk: FreeDie() }, 3: { at: 20, perk: FreeDie() }}});
+
+
+
+
+
+
 
 
