@@ -130,3 +130,17 @@ MagicBoost = Perk.$extend('MagicBoost', {
     }
 });
 
+DummyPerk = Perk.$extend('DummyPerk', {
+    __init__: function() {
+        this.$super();
+        this.reapply = true;
+        this.perk_type ='Nothing';
+        this.description = 'You get the pride of a levelup';
+    },
+    apply_perk: function(game) {
+        this.$super(game);
+
+        //Dummy perk does nothing
+    }
+});
+
