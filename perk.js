@@ -134,7 +134,7 @@ DummyPerk = Perk.$extend('DummyPerk', {
     __init__: function() {
         this.$super();
         this.reapply = true;
-        this.perk_type ='Nothing';
+        this.perk_type ='Progress!';
         this.description = 'You get the pride of a levelup';
     },
     apply_perk: function(game) {
