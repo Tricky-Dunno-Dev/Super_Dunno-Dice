@@ -18,7 +18,7 @@ LevelUp = Ice.$extend('LevelUp', {
 
 
 // Subtract 20 for level
-LevelUp(DummyPerk());
+LevelUp(FreeGold(50));
 LevelUp(LearnTrick('Ace'));
 LevelUp(FreeMultiplier(0.25));
 LevelUp(FreePower());
@@ -114,14 +114,17 @@ var levelup_new_tricks = [
 ];
 
 _.each(levelup_new_tricks, function(name, index) {
-		var num_pads = Math.round(10 * (index+1)/levelup_new_tricks.length)
+		var num_pads = Math.round(12 * (index+1)/levelup_new_tricks.length)
 		for(var i = 0; i < num_pads; i++){
-			LevelUp(FreePower());
+			LevelUp(DummyPerk());
+			LevelUp(DummyPerk());
+			LevelUp(DummyPerk());
 			LevelUp(FreeGold(index*500));
+			LevelUp(DummyPerk());
+			LevelUp(DummyPerk());
+			LevelUp(DummyPerk());
 			LevelUp(FreeMultiplier(index*0.10));
-			LevelUp(FreePower());
-			LevelUp(FreeGold(index*1000));
-			LevelUp(FreeMultiplier(index*0.25));
+			
 		}
 		LevelUp(LearnTrick(name));
 });
