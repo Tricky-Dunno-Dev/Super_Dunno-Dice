@@ -207,7 +207,7 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
         this.perks_to_apply = this.game.pending_perks;
 
         if(!this.perks_to_apply.length) {
-            self.set_phase('cleanup');
+            self.set_phase('automate')
             return true;
         }
 
@@ -244,6 +244,15 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
         this.set_phase('check_achievements');
         return true;
     },
+    
+    automate: function(){
+        var self = this;
+        console.log('Automate stuff here');
+        self.set_phase('ceanup');
+        return true;
+    
+    },
+    
     cleanup: function() {
         this.game.lastroll = this;
         this.game.rolling = false;
