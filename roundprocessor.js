@@ -247,7 +247,7 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
     
     automate: function(){
         var self = this;
-        console.log('Automate stuff here');
+        console.log(this.game.gold());
         self.set_phase('cleanup');
         return true;
     
