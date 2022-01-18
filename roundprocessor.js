@@ -247,7 +247,18 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
     
     automate: function(){
         var self = this;
-        console.log(this.game.gold());
+        
+      purchase_die: function(forfree) {
+        if(!forfree) {
+            if(this.gold() < this.next_die_cost()) {
+                return false;
+            }
+            this.gold.dec(this.next_die_cost());
+            this.purchased_die.inc(1);
+            this.stats.dice_purchased.inc(1);
+
+        }
+        
         self.set_phase('cleanup');
         return true;
     
