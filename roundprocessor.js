@@ -248,7 +248,48 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
     automate: function(){
         var self = this;
         
-        this.game.purchase_die(false)
+        var auto_options = [
+            {do:'purchase_die', percentage_threshold:50, priority:3},
+            {do:'increase_die_power', percentage_threshold:30, priority: 1},
+            {do:'die_power_to_sides', percentage_threshold:20, priority: 2}
+        ];
+        var buy_partial_bag = false;
+        
+        var sorted_options = auto_options.sort((a, b) => (a.priority > b.priority) ? 1 : -1);
+
+        //this should be set in options and alterable by users, hard code for now
+        // -------------- actions in turn approach ----------------------
+        // loop through options in priority order
+        // for each option, execute the action until the return is false (i.e. exhaust your money on this option)
+        while(true){
+            for(var i = 0; i < sorted_options.length; i++){
+                var purchase_dice_result = false;
+                var increase_dice_power_result = false;
+                var die_power_to_sides_result = false;
+                option = auto_options[i];
+                if(option.do == 'purchase_die'){
+                    increase_dice_power_result = this.game.purchase_die(false);
+                }
+                if(option.do == 'increase_die_power'){
+                    purchase_dice_result = this.game.purchase_die(false);   //obviously wrong
+                }
+                if(option.do == 'die_power_to_sides'){
+                    die_power_to_sides_result = this.game.purchase_die(false);  //obviously wrong
+                }
+            }
+            
+            if(buy_partial_bag){
+                // exit the outer loop only if all of the results are false
+                if (!increase_dice_power_result && !purchase_dice_result && !die_power_to_sides_result){
+                    break;
+                }
+            } else {
+                // exit the outer loop if any of the results were false
+                if !(increase_dice_power_result && purchase_dice_result && die_power_to_sides_result){
+                    break;
+                }
+            }
+        }
 
         self.set_phase('cleanup');
         return true;
