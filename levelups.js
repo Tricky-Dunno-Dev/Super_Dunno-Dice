@@ -114,16 +114,17 @@ var levelup_new_tricks = [
 ];
 
 _.each(levelup_new_tricks, function(name, index) {
-		var num_pads = Math.round(12 * (index+1)/levelup_new_tricks.length)
+		var num_pads = Math.round(7 * (index+1)/levelup_new_tricks.length)
 		for(var i = 0; i < num_pads; i++){
 			LevelUp(DummyPerk());
 			LevelUp(DummyPerk());
 			LevelUp(DummyPerk());
-			LevelUp(FreeGold(index*500));
+			LevelUp(FreeGold((index+1)*(index+1)*100));
 			LevelUp(DummyPerk());
 			LevelUp(DummyPerk());
 			LevelUp(DummyPerk());
-			LevelUp(FreeMultiplier(index*0.10));
+			LevelUp(FreeMultiplier((index+1)*(index+1)*0.01));
+			
 			
 		}
 		LevelUp(LearnTrick(name));
