@@ -248,7 +248,7 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
     automate: function(){
         var self = this;
         
-        purchase_die()
+        this.game.purchase_die(false)
 
         self.set_phase('cleanup');
         return true;
