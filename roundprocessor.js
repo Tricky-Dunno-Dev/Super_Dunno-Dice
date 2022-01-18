@@ -285,7 +285,7 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
                 }
             } else {
                 // exit the outer loop if any of the results were false
-                if !(increase_dice_power_result && purchase_dice_result && die_power_to_sides_result){
+                if (!(increase_dice_power_result && purchase_dice_result && die_power_to_sides_result)){
                     break;
                 }
             }
