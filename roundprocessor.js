@@ -271,7 +271,11 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
                     increase_dice_power_result = this.game.purchase_die(false);
                 }
                 if(option.do == 'increase_die_power'){
-                    purchase_dice_result = this.game.purchase_die(false);   //obviously wrong
+                    purchase_dice_result = true
+                    for(var j = 0; j < this.game.dice.length; j++){
+                        purchase_dice_result = this.game.dice[j].purchase_power();
+                        break;
+                    }
                 }
                 if(option.do == 'die_power_to_sides'){
                     die_power_to_sides_result = this.game.purchase_die(false);  //obviously wrong
