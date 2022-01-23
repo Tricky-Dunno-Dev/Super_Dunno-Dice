@@ -271,10 +271,17 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
                     increase_dice_power_result = this.game.purchase_die(false);
                 }
                 if(option.do == 'increase_die_power'){
-                    purchase_dice_result = true
+                    // only update the power of game dice if we can update all of them
+                    var total_purchase_power_cost = 0;
                     for(var j = 0; j < this.game.dice.length; j++){
-                        purchase_dice_result = this.game.dice[j].purchase_power();
-                        break;
+                        total_purchase_power_cost = total_purchase_power_cost + this.game.dice[j].next_power_cost();
+                    }
+                    if(this.game.gold() >= total_purchase_power_cost){
+                        for(var j = 0; j < this.game.dice.length; j++){
+                            purchase_dice_result = this.game.dice[j].purchase_power();
+                            break;
+                        }
+                        purchase_dice_result = true;
                     }
                 }
                 if(option.do == 'die_power_to_sides'){
