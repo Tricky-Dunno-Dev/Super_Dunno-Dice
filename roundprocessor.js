@@ -279,7 +279,6 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
                     if(this.game.gold() >= total_purchase_power_cost){
                         for(var j = 0; j < this.game.dice.length; j++){
                             purchase_dice_result = this.game.dice[j].purchase_power();
-                            break;
                         }
                         purchase_dice_result = true;
                     }
