@@ -262,24 +262,31 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
         // loop through options in priority order
         // for each option, execute the action until the return is false (i.e. exhaust your money on this option)
         while(true){
-            for(var i = 0; i < sorted_options.length; i++){
+            for(const option of sorted_options){
+            //for(var i = 0; i < sorted_options.length; i++){
                 var purchase_dice_result = false;
                 var increase_dice_power_result = false;
                 var die_power_to_sides_result = false;
-                option = auto_options[i];
+                //option = auto_options[i];
                 if(option.do == 'purchase_die'){
                     increase_dice_power_result = this.game.purchase_die(false);
                 }
                 if(option.do == 'increase_die_power'){
                     // only update the power of game dice if we can update all of them
                     var total_purchase_power_cost = 0;
-                    for(var j = 0; j < this.game.dice.length; j++){
-                        total_purchase_power_cost = total_purchase_power_cost + this.game.dice[j].next_power_cost();
+                    for(const die of game.dice){
+                        total_purchase_power_cost = total_purchase_power_cost + die.next_power_cost();
                     }
+//                     for(var j = 0; j < this.game.dice.length; j++){
+//                         total_purchase_power_cost = total_purchase_power_cost + this.game.dice[j].next_power_cost();
+//                     }
                     if(this.game.gold() >= total_purchase_power_cost){
-                        for(var j = 0; j < this.game.dice.length; j++){
-                            purchase_dice_result = this.game.dice[j].purchase_power();
+                        for(const die of game.dice){
+                            purchase_dice_result = die.purchase_power();
                         }
+//                         for(var j = 0; j < this.game.dice.length; j++){
+//                             purchase_dice_result = this.game.dice[j].purchase_power();
+//                         }
                         purchase_dice_result = true;
                     }
                 }
