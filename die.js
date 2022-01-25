@@ -218,7 +218,7 @@ Die = Ice.$extend('Die', {
 //         for(var x=0; x < power_multiple; x++) {
 //             this.purchased_power.inc(1);
 //             this.power.inc(1);
-        }
+//         }
 
         return true;
     },
