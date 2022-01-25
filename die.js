@@ -200,6 +200,22 @@ Die = Ice.$extend('Die', {
         this.power.inc(1);
         return true;
     },
+    purchase_multipower: function(power_multiple) {
+        var total_cost = 0;
+        var next_star = this.game.next_magic_at(this);
+        for(var x=0; x < power_multiple; x++) {
+            total_cost += this.game.next_power_cost(this.purchased_power() + x);
+        }
+        
+        if(this.game.gold() < total_cost) {
+            return false;
+        }
+        
+        this.game.gold.dec(total_cost);
+        this.purchased_power.inc(power_multiple);
+        this.power.inc(power_multiple);
+        return true;
+    },
     purchase_plus: function() {
         if(this.game.gold() < this.next_plus_cost()) {
             return false;
