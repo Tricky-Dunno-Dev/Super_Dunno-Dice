@@ -212,10 +212,12 @@ Die = Ice.$extend('Die', {
         }
         
         this.game.gold.dec(total_cost);
+        this.purchased_power.inc(power_multiple);
+        this.power.inc(power_multiple);
         
-        for(var x=0; x < power_multiple; x++) {
-            this.purchased_power.inc(1);
-            this.power.inc(1);
+//         for(var x=0; x < power_multiple; x++) {
+//             this.purchased_power.inc(1);
+//             this.power.inc(1);
         }
 
         return true;
