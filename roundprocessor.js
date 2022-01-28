@@ -298,14 +298,14 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
                         for(var x=0; x < needed_points; x++) {
                              total_to_sides_cost += die.game.next_power_cost(die.purchased_power() + x);   
                         }
-                    });
+                    })
                         
                         if(this.game.gold() >= total_to_sides_cost){
                             _.each(game.dice, function(die) {
                                 var next_star = die.game.next_magic_at(die);
                                 var needed_points = next_star - die.power() - 1;
                                 this.purchase_x_power(needed_points);
-                            });
+                            })
                           die_power_to_sides_result = true;
                         }       
                  }
