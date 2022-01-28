@@ -400,8 +400,8 @@ DieUpgrader = Renderer.$extend('DieUpgrader', {
             self.flash(true, die.container.$el);
 
             ok = true;
-            for(x=0;x < needed_points;x++) {
-                die.purchase_power();
+            
+            purchase_x_power(needed_points);
             }
     
         });
