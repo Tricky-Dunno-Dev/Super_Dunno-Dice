@@ -255,9 +255,9 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
         var self = this;
         
         var auto_options = [
-            {do:'purchase_die', percentage_threshold:50, priority:3},
-            {do:'increase_die_power', percentage_threshold:30, priority: 1},
-            {do:'die_power_to_sides', percentage_threshold:20, priority: 2}
+            {do:'purchase_die', percentage_threshold:50, priority:1},
+            {do:'increase_die_power', percentage_threshold:30, priority: 2},
+            {do:'die_power_to_sides', percentage_threshold:20, priority: 3}
         ];
         var buy_partial_bag = false;
         
