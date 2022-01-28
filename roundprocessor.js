@@ -291,8 +291,10 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
                 }
                 
                 if(option.do == 'die_power_to_sides'){
+                        
+                    var total_to_sides_cost = 0;
+                    
                     _.each(this.game.dice, function(die) {
-                        var total_to_sides_cost = 0;
                         var next_star = die.game.next_magic_at(die);
                         var needed_points = next_star - die.power() - 1;
                         for(var x=0; x < needed_points; x++) {
@@ -309,7 +311,7 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
                         
                         die_power_to_sides_result = true;
                     }       
-                 }
+                }
             }
             
             if(buy_partial_bag){
