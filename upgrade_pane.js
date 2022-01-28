@@ -403,6 +403,7 @@ DieUpgrader = Renderer.$extend('DieUpgrader', {
             
             purchase_x_power(needed_points);
             }
+         )
     
         });
         this.flash(ok, this.$multi_power_line);
