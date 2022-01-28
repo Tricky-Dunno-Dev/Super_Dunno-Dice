@@ -250,7 +250,7 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
         //this should be set in options and alterable by users, hard code for now
         // -------------- actions in turn approach ----------------------
         // loop through options in priority order
-        // for each option, execute the action until the return is false (i.e. exhaust your money on this option)
+        // for each loop, execute the options until one returns false (i.e. cannot afford this option)
       
         var self = this;
         
@@ -291,31 +291,34 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
                 }
                 
                 if(option.do == 'die_power_to_sides'){
-                    _.each(game.dice, function(die) {
+                    _.each(this.game.dice, function(die) {
                         var total_to_sides_cost = 0;
                         var next_star = die.game.next_magic_at(die);
                         var needed_points = next_star - die.power() - 1;
                         for(var x=0; x < needed_points; x++) {
                              total_to_sides_cost += die.game.next_power_cost(die.purchased_power() + x);   
                         }
-                    })
+                    });
                         
-                        if(this.game.gold() >= total_to_sides_cost){
-                            _.each(game.dice, function(die) {
-                                var next_star = die.game.next_magic_at(die);
-                                var needed_points = next_star - die.power() - 1;
-                                this.purchase_x_power(needed_points);
-                            })
-                          die_power_to_sides_result = true;
-                        }       
+                    if(this.game.gold() >= total_to_sides_cost){
+                        _.each(this.game.dice, function(die) {
+                            var next_star = this.game.next_magic_at(die);
+                            var needed_points = next_star - die.power() - 1;
+                            die.purchase_x_power(needed_points);
+                        });
+                        
+                        die_power_to_sides_result = true;
+                    }       
                  }
+            }
             
             if(buy_partial_bag){
                 // exit the outer loop only if all of the results are false
                 if (!increase_dice_power_result && !purchase_dice_result && !die_power_to_sides_result){
                     break;
                 }
-            } else {
+            } 
+             else {
                 // exit the outer loop if any of the results were false
                 if (!(increase_dice_power_result && purchase_dice_result && die_power_to_sides_result)){
                     break;
