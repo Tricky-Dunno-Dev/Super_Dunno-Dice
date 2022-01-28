@@ -256,12 +256,12 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
         
         var auto_options = [
             {do:'purchase_die', percentage_threshold:50, priority:1},
-            {do:'increase_die_power', percentage_threshold:30, priority: 2},
+            {do:'increase_die_power', percentage_threshold:30, priority: 0},
             {do:'die_power_to_sides', percentage_threshold:20, priority: 3}
         ];
         var buy_partial_bag = false;
         
-        var sorted_options = auto_options.sort((a, b) => (a.priority > b.priority) ? 1 : -1)
+        var sorted_options = auto_options.sort((a, b) => (a.priority > b.priority) ? 1 : -1).filter(a => a.priority > 0);
         
         while(true){
             for(const option of sorted_options){
