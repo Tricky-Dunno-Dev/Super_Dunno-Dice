@@ -425,9 +425,7 @@ DieUpgrader = Renderer.$extend('DieUpgrader', {
             self.flash(true, die.container.$el);
 
             ok = true;
-            for(x=0;x < needed_points;x++) {
-                die.purchase_power();
-            }
+            die.purchase_x_power(needed_points);
     
         });
         this.flash(ok, this.$max_sides_line);
