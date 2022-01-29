@@ -207,7 +207,7 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
         this.perks_to_apply = this.game.pending_perks;
 
         if(!this.perks_to_apply.length) {
-            if(settings.automate_on()) {
+            if(settings.automation_on()) {
                 self.set_phase('automate')
             } else {
                 self.set_phase('cleanup')
