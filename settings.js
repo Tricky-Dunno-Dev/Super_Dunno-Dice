@@ -4,6 +4,7 @@ Settings = Ice.$extend('Settings', {
         this.mute_sounds = IceObservable(this, false);
         this.mute_music = IceObservable(this, false);
         this.show_tutorial_on_start = IceObservable(this, true);
+        this.automation_on = IceObservable(this, false);
 
         this.evChanged.sub(this.save, this);
         this.evChanged.sub(this.sync_audio, this);
