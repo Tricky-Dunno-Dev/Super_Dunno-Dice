@@ -66,7 +66,7 @@ Sidebar = Renderer.$extend('Sidebar', {
         this.$help.click(_.bind(this.onHelpClicked, this));
         this.$sounds.click(_.bind(this.onSoundsClicked, this));
         this.$music.click(_.bind(this.onMusicClicked, this));
-        this.$test.click(_.bind(this.onTestClicked, this));
+        this.$auto.click(_.bind(this.onAutoToggleClicked, this));
 
     },
     onSettingsChanged: function() {
@@ -83,8 +83,8 @@ Sidebar = Renderer.$extend('Sidebar', {
     onHelpClicked: function() {
         help.open();
     },
-    onTestClicked: function() {
-        alert("Hi there!");
+    onAutoToggleClicked: function() {
+        settings.automation_on(!settings.automation_on());
     },
     pane_size: function() {
         return Point(this.$el.width() - this.$tabs_holder.position().left * 4,
