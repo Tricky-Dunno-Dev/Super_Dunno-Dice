@@ -207,8 +207,13 @@ RoundProcessor = Ice.$extend('RoundProcessor', {
         this.perks_to_apply = this.game.pending_perks;
 
         if(!this.perks_to_apply.length) {
-            self.set_phase('automate')
+            if(settings.automate_on()) {
+                self.set_phase('automate')
+            } else {
+                self.set_phase('cleanup')
+            } 
             return true;
+            
         }
 
         var flyers = _.map(this.perks_to_apply, function(perk) {
