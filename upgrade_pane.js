@@ -81,6 +81,12 @@ DieUpgrader = Renderer.$extend('DieUpgrader', {
                     '<td class="value" id="multiplier"></td>' +
                     '<td><button id="buy_multiplier"></button></td>' +
                 '</tr>' +
+                '<tr id="test_line">' +
+                    '<td class="shortcut">X</td>' +
+                    '<td class="label">Hello_Press_X</td>' +
+                    '<td class="value" id="test"></td>' +
+                    '<td><button id="test"></button></td>' +
+                '</tr>' +
                 /*'<tr id="magic_line">' +
                     '<td class="shortcut">M</td>' +
                     '<td class="label">Magic</td>' +
