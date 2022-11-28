@@ -417,17 +417,17 @@ DieUpgrader = Renderer.$extend('DieUpgrader', {
         var ok = false;
         _.each(self.upgrade_targets(), function(die) {
             if(die.game.rolling) return;
-            var total_cost = 0;
-            var next_star = die.game.next_magic_at(die);
-            var needed_points = next_star - die.power() - 1;
-            for(var x=0; x < needed_points; x++) {
-                total_cost += die.game.next_power_cost(die.purchased_power() + x);
-            }
+            //var total_cost = 0;
+            //var next_star = die.game.next_magic_at(die);
+            //var needed_points = next_star - die.power() - 1;
+            //for(var x=0; x < needed_points; x++) {
+            //    total_cost += die.game.next_power_cost(die.purchased_power() + x);
+            //}
 
-            if(total_cost > die.game.gold()) {
-                //this.flash(false, this.$multi_power_line);
-                return;
-            }
+            //if(total_cost > die.game.gold()) {
+              //  //this.flash(false, this.$multi_power_line);
+               // return;
+            //}
             self.flash(true, die.container.$el);
 
             ok = true;
